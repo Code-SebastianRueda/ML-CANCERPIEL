@@ -1,0 +1,6 @@
+Métrica,Train,Validation,Test
+Accuracy,0.4965,0.8509,0.8544
+Precision,0.4964,0.8671,0.8758
+Recall,0.4965,0.8509,0.8544
+F1-Score,0.4959,0.8567,0.8614
+ROC-AUC,0.4937,0.9123,0.9239

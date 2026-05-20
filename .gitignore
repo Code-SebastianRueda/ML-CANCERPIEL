@@ -1,0 +1,64 @@
+# ============================================
+# Virtual Environments
+# ============================================
+.venv/
+venv/
+CancerPiel/
+SkinCancerClassifier/venv/
+env/
+
+# ============================================
+# Dataset (pesado, se descarga automaticamente)
+# ============================================
+SkinCancerClassifier/data/raw/
+SkinCancerClassifier/data/processed/
+SkinCancerClassifier/data/split/
+SkinCancerClassifier/data/train/
+SkinCancerClassifier/data/val/
+SkinCancerClassifier/data/test/
+
+# ============================================
+# Modelos entrenados (pesados)
+# ============================================
+SkinCancerClassifier/models/*.h5
+SkinCancerClassifier/models/*.keras
+SkinCancerClassifier/models/*.pb
+SkinCancerClassifier/models/saved_model/
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ============================================
+# Jupyter
+# ============================================
+.ipynb_checkpoints/
+
+# ============================================
+# IDE
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================================
+# OS
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================
+# Logs y temporales
+# ============================================
+*.log
+*.tmp
