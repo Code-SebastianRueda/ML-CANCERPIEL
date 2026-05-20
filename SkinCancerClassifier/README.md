@@ -176,13 +176,21 @@ pip install -r requirements.txt
 python -m ipykernel install --user --name=CancerPiel --display-name "CancerPiel"
 ```
 
-### 3. Entrenar el modelo (Notebook)
+### 3. Obtener el dataset y entrenar el modelo
+
+> **⚠️ IMPORTANTE:** El dataset NO está incluido en el repositorio por su tamaño (~2.5 GB). Se descarga automáticamente al ejecutar el notebook.
 
 ```bash
 jupyter notebook notebooks/skin_cancer_classifier.ipynb
 ```
 
-Seleccionar kernel **"CancerPiel"** y ejecutar todas las celdas en orden.
+Seleccionar kernel **"CancerPiel"** y ejecutar todas las celdas en orden. El notebook:
+1. Descarga automáticamente el dataset HAM10000 desde Kaggle (requiere cuenta de Kaggle)
+2. Organiza las imágenes por clase (benigno/maligno)
+3. Aplica oversampling para balancear clases
+4. Entrena el modelo en 2 fases
+5. Evalúa y genera todas las métricas y gráficas
+6. Guarda el modelo en `models/best_model.h5`
 
 ### 4. Ejecutar la aplicación web (local)
 
